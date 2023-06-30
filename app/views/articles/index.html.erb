@@ -1,1 +1,24 @@
-<h1>Hello Rails!</h1>
+<h1>Articles listing page!</h1>
+
+<table>
+<thead>
+ <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Actions</th>
+ </tr>
+</thead>
+
+ <tbody> 
+ <% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.body %></td>
+    <td> Placeholder </td>
+  </tr>
+  <% end %>
+ </tbody>
+
+
+
+</table>
